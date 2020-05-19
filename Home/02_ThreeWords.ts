@@ -6,8 +6,8 @@ function threeWords(text: string): boolean {
 
 const threeWords2 = (text: string): boolean => Boolean(text.match(/(([a-z]+)(\s|\b)){3}/gi))
 
-assert.equal(threeWords("Hello World hello"), true)
-assert.equal(threeWords("He is 123 man"), false)
-assert.equal(threeWords("1 2 3 4"), false)
-assert.equal(threeWords("bla bla bla bla"), true)
-assert.equal(threeWords("Hi"), false)
+assert.deepEqual(threeWords("Hello World hello"), true)
+assert.deepEqual(threeWords("He is 123 man"), false)
+assert.deepEqual(threeWords("1 2 3 4"), false)
+assert.deepEqual(threeWords("bla bla bla bla"), true)
+assert.deepEqual(threeWords("Hi"), false)

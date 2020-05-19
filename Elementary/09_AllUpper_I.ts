@@ -6,9 +6,9 @@ function isAllUpper(text: string): boolean {
 
 const isAllUpper2 = (text: string): boolean => text.split("").every(val => val.match(/[A-Z|\s|\d]/g))
 
-assert.equal(isAllUpper("ALL UPPER"), true)
-assert.equal(isAllUpper("all lower"), false)
-assert.equal(isAllUpper("mixed UPPER and lower"), false)
-assert.equal(isAllUpper("Hi"), false)
-assert.equal(isAllUpper("123"), true)
-assert.equal(isAllUpper(""), true)
+assert.deepEqual(isAllUpper("ALL UPPER"), true)
+assert.deepEqual(isAllUpper("all lower"), false)
+assert.deepEqual(isAllUpper("mixed UPPER and lower"), false)
+assert.deepEqual(isAllUpper("Hi"), false)
+assert.deepEqual(isAllUpper("123"), true)
+assert.deepEqual(isAllUpper(""), true)

@@ -4,6 +4,6 @@ function firstWord(text: string): string {
     return text.trim().split(/\s/g).shift()
 }
 
-assert.equal(firstWord("Hello world"), "Hello")
-assert.equal(firstWord("a word"), "a")
-assert.equal(firstWord("hi"), "hi")
+assert.deepEqual(firstWord("Hello world"), "Hello")
+assert.deepEqual(firstWord("a word"), "a")
+assert.deepEqual(firstWord("hi"), "hi")
