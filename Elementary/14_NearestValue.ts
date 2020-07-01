@@ -1,6 +1,10 @@
 import * as assert from "assert"
 
 function nearestValue(values: number[], search: number): number {
+    return values.sort((a,b) => Math.pow(a - search, 2) - Math.pow(b - search, 2) || a - b).shift()
+}
+
+function nearestValue2(values: number[], search: number): number {
     const numberSorter = (a: number, b: number) => (a - search) - (b - search)
     const nearestGrab = (a: number, b: number) => Math.abs(a - search) - Math.abs(b - search)
     return values.sort(numberSorter).sort(nearestGrab).shift()
