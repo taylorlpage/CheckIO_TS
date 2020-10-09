@@ -1,5 +1,4 @@
 import * as assert from "assert";
-import { string } from "tassert";
 
 function mostWanted(text: string): string {
      return Array.from(
