@@ -6,6 +6,6 @@ function isEven(num: number): boolean {
 
 //const isEven = (num: number): boolean => !(num % 2)
 
-assert.deepEqual(isEven(2), true);
-assert.deepEqual(isEven(5), false);
-assert.deepEqual(isEven(0), true);
+assert.deepStrictEqual(isEven(2), true)
+assert.deepStrictEqual(isEven(5), false)
+assert.deepStrictEqual(isEven(0), true)
