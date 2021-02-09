@@ -4,5 +4,7 @@ function multTwo(a: number, b: number): number {
     return Math.imul(a, b)
 }
 
-assert.deepEqual(multTwo(3, 2), 6)
-assert.deepEqual(multTwo(0, 1), 0)
+export default multTwo
+
+assert.deepStrictEqual(multTwo(3, 2), 6)
+assert.deepStrictEqual(multTwo(0, 1), 0)
